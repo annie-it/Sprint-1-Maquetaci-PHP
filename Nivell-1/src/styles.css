@@ -1,4 +1,4 @@
-/* Estilos internos (idealmente deberían ir en el archivo CSS externo) */
+/* Estilos externos de CSS */
 body {
     max-width: 1200px;
     margin: 50px auto;
@@ -25,7 +25,7 @@ body {
     padding: 0 20px;
 }
 .navegacion p{
-    line-height: 50px;;
+    line-height: 50px;
 }
 .logo {
     display: block;
@@ -99,12 +99,12 @@ body {
 
 .publicidad{
     background: grey;
-    padding: 0 20px;
+    padding: 25px 0;
     height: 100%;
 }
 .publicidad p {
     background: red;
-    padding: 15px 0;
+    padding: 25px; 
 }
 
 #footer {
