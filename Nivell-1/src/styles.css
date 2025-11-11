@@ -99,12 +99,12 @@ body {
 
 .publicidad{
     background: grey;
-    padding: 25px 0;
+    padding: 0 20px;
     height: 100%;
 }
 .publicidad p {
     background: red;
-    padding: 25px; 
+    padding: 25px 0; 
 }
 
 #footer {
