@@ -1,0 +1,53 @@
+/*Escritorio mediano (≤1200px) */
+@media (max-width: 1200px) {
+}
+
+/* Tablet (599px – 900px) */
+@media (min-width: 599px) and (max-width: 900px) {
+  .navegacion {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .bloque-izquierda p {
+    display: flex;
+  }
+
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+
+/* Móvil (≤600px) */
+@media (max-width: 600px) {
+  .navegacion {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  #contenido {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .articles {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .ft-content {
+    gap: 0;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  body {
+    margin: 0;
+  }
+}

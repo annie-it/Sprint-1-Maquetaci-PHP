@@ -1,0 +1,134 @@
+/* Estilos internos (idealmente deberían ir en el archivo CSS externo) */
+body {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+#header {
+    padding: 40px 25px;
+    background: black;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.navegacion{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background: grey;
+    padding: 0 20px;
+}
+.navegacion p{
+    line-height: 50px;;
+}
+.logo {
+    display: block;
+    background-color: lightblue;
+    width: 100%;
+}
+.nav {
+    display: block;
+    background-color: lightgreen;
+    width: 100%;
+}
+.social {
+    display: block;
+    background-color: lightcoral;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+.banner {
+    text-align: center;
+    background: orange;
+    padding: 30px;
+}
+.banner p {
+    background: #ffff0075;
+    padding: 30px 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 40px;
+    background: black;
+    color: #fff;
+}
+.bloque-izquierda{ 
+    text-align: center;
+    background: grey;
+    padding: 20px;
+}
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0 20px;
+}
+.bloque-izquierda p{
+    background: green;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+.bloque-izquierda a{
+    background: pink;
+    display: block;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    color: black;
+}
+
+.publicidad{
+    background: grey;
+    padding: 0 20px;
+    height: 100%;
+}
+.publicidad p {
+    background: red;
+    padding: 15px 0;
+}
+
+#footer {
+    display: block;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    background: rgb(0, 118, 61);
+}
+.ft-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.ft-legales {
+    display: flex;
+    gap: 20px;
+    justify-content: center;   
+}
+.ft-legales a {
+    color: white;
+    text-decoration: none;
+}  
+.ft-legales a:hover {
+    color: yellow;
+}    
