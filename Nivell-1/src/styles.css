@@ -1,141 +1,124 @@
 /* Estilos externos de CSS */
+
 body {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 20px auto;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     flex-direction: column;
+    font-family: sans-serif;
 }
 #header {
-    padding: 40px 25px;
+    padding: 20px;
     background: black;
-    min-height: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .navegacion{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: stretch;
     align-items: center;
     gap: 20px;
-    text-align: left;
-    background: grey;
-    padding: 0 20px;
-    
+    background:rgb(54, 54, 113);
 }
-.navegacion p{
-    line-height: 50px;
-    
-}
-.logo {
-    display: block;
-    background-color: lightgreen;
-    width: 100%;
-}
-.nav {
-    display: block;
-    background-color: lightgreen;
-    width: 100%;
-}
-.social {
-    display: block;
-    background-color: lightgreen;
+.logo, .nav, .social {
+    background-color: rgb(172, 66, 66);
     color: black;
     text-decoration: none;
-    width: 100%;
+    text-align: left;
+    margin: 20px;
 }
+p.logo, p.nav, p.social{
+    padding: 10px;
+}
+
+  .social a {
+    text-decoration: none;
+    color: black;
+  }
+
 .banner {
     text-align: left;
     background: orange;
-    padding: 30px;
+    padding: 20px;
+
 }
-.banner p {
+.banner h3 {
     background: #ffff0075;
-    padding: 30px 0;
+    padding: 10px;
     margin: 0;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #contenido{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    align-items: start;
     text-align: left;
-    gap: 40px;
-    padding: 40px;
+    gap: 20px;
+    padding: 20px;
     background: black;
-    color: #fff;
+    color: black;
 }
+
 .bloque-izquierda{ 
     text-align: left;
-    background: grey;
-    padding: 20px;
+    background:rgb(60, 48, 72);
+
 }
 .articles{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
     gap: 0 20px;
 }
 .bloque-izquierda p{
-    background: green;
-    padding: 10px 0;
-    font-size: 12px;
-    font-weight: bold;
-    width: 100%;
+    background:rgb(30, 94, 177);
+    padding: 10px;
+    margin: 20px;;
+  
 }
 .bloque-izquierda a{
     background: pink;
     display: block;
-    padding: 10px 0;
-    font-size: 12px;
-    font-weight: bold;
-    width: 100%;
+    padding: 10px;
+    margin: 20px;
     color: black;
+    text-decoration: none;
+
 }
 
 .publicidad{
-    background: grey;
-    padding: 0 20px;
+    background: rgb(222, 39, 39);
     height: 100%;
 }
 .publicidad p {
-    background: red;
-    padding: 25px 0; 
+    background: rgb(212, 208, 86);
+    padding: 10px;
+    color: black;
+    margin: 20px;
 }
 
 #footer {
-    display: block;
-    text-align: left;
+
     color:black;
-    padding: 35px;
+    padding: 20px;
     background: black;
 }
 .ft-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(225, 225, 105);
     gap: 20px;
+    padding: 10px;
 }
-.ft-legales {
-    display: flex;
-    gap: 30px; 
-    justify-content: center;   
+.ft-content p {
+    margin: 0;
 }
-.ft-legales a {
-    background-color: aqua;
-    color:black;
-    text-decoration: none;
-}  
-.ft-legales a:hover {
-    background-color: aqua;
-    color: black;
-}    
+  
 
 /*Responsive*/
 
@@ -147,16 +130,12 @@ body {
 @media (min-width: 599px) and (max-width: 900px) {
   .navegacion {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 10px;
   }
 
   #contenido {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .bloque-izquierda p {
-    display: flex;
   }
 
   .articles {
@@ -173,7 +152,7 @@ body {
 @media (max-width: 600px) {
   .navegacion {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 10px;
   }
   #contenido {
     grid-template-columns: 1fr;
@@ -184,9 +163,9 @@ body {
     margin-bottom: 20px;
   }
   .ft-content {
-    gap: 0;
+    gap: 10px;
     flex-direction: column;
-    padding-bottom: 10px;
+  
   }
   body {
     margin: 0;
